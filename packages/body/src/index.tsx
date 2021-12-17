@@ -5,6 +5,7 @@ import {
 	tokens,
 	themeVars,
 	mapSpacing,
+	outline,
 } from '@ag.ds-next/core';
 import { Box, BoxProps } from '@ag.ds-next/box';
 
@@ -21,11 +22,7 @@ export const bodyClass = css({
 	margin: 0,
 	textSizeAdjust: '100%',
 	fontFamily: tokens.font.body,
-
-	// can we use themes here? ... do we need to?
 	color: themeVars.foreground.text,
-	// backgroundColor: themeVars.background.page,
-
 	a: {
 		color: themeVars.foreground.action,
 		textDecoration: 'underline',
@@ -36,14 +33,16 @@ export const bodyClass = css({
 			textDecoration: 'none',
 		},
 
-		// @include AU-focus();
+		'&:focus': {
+			...outline,
+		},
 	},
 
 	/**
 	 * Highlighting in-page sections that are in focus
 	 */
 	'[tabindex="0"]:focus, :target': {
-		// @include AU-outline();
+		...outline,
 	},
 
 	/**
