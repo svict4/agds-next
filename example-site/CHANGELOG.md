@@ -1,6 +1,14 @@
 # @ag.ds-next/example-site
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [e3c292c]
+  - @ag.ds-next/body@1.0.2
+
 ## 0.0.2
+
 ### Patch Changes
 
 - Updated dependencies [458f1db]

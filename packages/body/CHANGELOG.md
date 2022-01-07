@@ -1,5 +1,11 @@
 # @ag.ds-next/body
 
+## 1.0.2
+
+### Patch Changes
+
+- e3c292c: Rolled back the workbreak change which was not working as expected.
+
 ## 1.0.1
 
 ### Patch Changes
